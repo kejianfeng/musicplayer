@@ -1,0 +1,356 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3d effect</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image: url("image/love.jpg");
+			background-repeat:  no-repeat;
+			background-size: cover;
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			margin-left: -100px;
+			bottom: 400px;
+			transform-style: preserve-3d;
+			animation: sport 6s linear 0s infinite normal;
+
+		}
+		ul li{
+			width: 200px;
+			height: 200px;
+			list-style: none;
+			font-size: 40px;
+			text-align: center;
+			line-height: 200px;
+			color: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border:4px solid pink;
+			background-color: black;
+
+		}
+
+		ul .li-1{
+			
+			transform: rotateY(60deg) translateZ(200px);
+		}
+		ul .li-2{
+			
+			transform: rotateY(120deg) translateZ(200px);
+		}
+		ul .li-3{
+			
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		ul .li-4{
+			
+			transform: rotateY(240deg) translateZ(200px);
+		}
+		ul .li-5{
+			transform: rotateY(300deg) translateZ(200px);
+		}
+		ul .li-6{
+		
+			transform: rotateY(360deg) translateZ(200px);
+		}
+		ul li img{
+			height: 200px;
+			width: 200px;
+		}
+		@keyframes sport{
+			from{
+				transform: rotateX(-10deg) rotateY(0deg) ;
+
+			}
+			to{
+				transform: rotateX(-10deg) rotateY(360deg) ;
+			}
+		}
+		ul:hover{
+			animation-play-state: paused;
+		}
+		ul:hover li img{
+			opacity: 0.5;
+		}
+		ul li:hover img{
+			opacity: 1;
+		}
+		#controls{
+			position: absolute;
+			margin-left: 300px;
+		}
+		.jj img{
+			width: 100px;
+			height: 100px;
+		}
+		.jj{
+			position: absolute;
+			left: 750px;
+			top: 450px;
+		}
+		.heart{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			bottom: 80px;
+			left: 80px;
+			animation: move 10s linear 0s infinite normal;
+		}
+		@keyframes move{
+			0%{
+				left: 80px;
+				bottom: 80px;
+				opacity: 1;
+			}
+			20%{
+				left: 300px;
+				bottom: 400px;
+				opacity: 0.1
+			}
+			40%{
+				left: 500px;
+				bottom: 250px;
+				opacity: 1
+			}
+			60%{
+				left: 800px;
+				bottom: 100px;
+				opacity: 0.5;
+			}
+			80%{
+				left: 900px;
+				bottom: 20px;
+				opacity: 0.8;
+
+			}
+			100%{
+				left: 400px;
+				bottom: 100px;
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<ul>
+		<li class="li-1"><img src="image/image-1.jpg"></li>
+		<li class="li-2"><img src="image/image-2.jpg"></li>
+		<li class="li-3"><img src="image/image-3.jpg"></li>
+		<li class="li-4"><img src="image/image-4.jpg"></li>
+		<li class="li-5"><img src="image/image-5.jpg"></li>
+		<li class="li-6"><img src="image/image-6.jpg"></li>
+	
+		</ul>
+	</div>
+	<div class="music">
+		<audio src="music/Love Paradise.mp3" id="controls" autoplay="autoplay">音乐</audio>
+	</div>
+	<div class="jj">
+	<img src="image/pause.png" id="pause-logo" onclick="controls()">
+	</div>
+	<img src="image/heart.png" class="heart" alt="">
+</body>
+<script type="text/javascript">
+	var love=document.getElementById("controls");
+	var gg=document.getElementById("pause-logo")
+	function controls(){
+		if(love.paused){
+			love.play();
+			gg.setAttribute("src","image/pause.png");
+		}
+		else{
+			love.pause();
+			gg.setAttribute("src","image/play.png")
+		}
+	}
+</script>
+=======
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3d effect</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+		}
+		body{
+			background-image: url("image/love.jpg");
+			background-repeat:  no-repeat;
+			background-size: cover;
+		}
+		ul{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 50%;
+			margin-left: -100px;
+			bottom: 400px;
+			transform-style: preserve-3d;
+			animation: sport 6s linear 0s infinite normal;
+
+		}
+		ul li{
+			width: 200px;
+			height: 200px;
+			list-style: none;
+			font-size: 40px;
+			text-align: center;
+			line-height: 200px;
+			color: red;
+			position: absolute;
+			top: 0;
+			left: 0;
+			border:4px solid pink;
+			background-color: black;
+
+		}
+
+		ul .li-1{
+			
+			transform: rotateY(60deg) translateZ(200px);
+		}
+		ul .li-2{
+			
+			transform: rotateY(120deg) translateZ(200px);
+		}
+		ul .li-3{
+			
+			transform: rotateY(180deg) translateZ(200px);
+		}
+		ul .li-4{
+			
+			transform: rotateY(240deg) translateZ(200px);
+		}
+		ul .li-5{
+			transform: rotateY(300deg) translateZ(200px);
+		}
+		ul .li-6{
+		
+			transform: rotateY(360deg) translateZ(200px);
+		}
+		ul li img{
+			height: 200px;
+			width: 200px;
+		}
+		@keyframes sport{
+			from{
+				transform: rotateX(-10deg) rotateY(0deg) ;
+
+			}
+			to{
+				transform: rotateX(-10deg) rotateY(360deg) ;
+			}
+		}
+		ul:hover{
+			animation-play-state: paused;
+		}
+		ul:hover li img{
+			opacity: 0.5;
+		}
+		ul li:hover img{
+			opacity: 1;
+		}
+		#controls{
+			position: absolute;
+			margin-left: 300px;
+		}
+		.jj img{
+			width: 100px;
+			height: 100px;
+		}
+		.jj{
+			position: absolute;
+			left: 750px;
+			top: 450px;
+		}
+		.heart{
+			width: 300px;
+			height: 300px;
+			position: absolute;
+			bottom: 80px;
+			left: 80px;
+			animation: move 10s linear 0s infinite normal;
+		}
+		@keyframes move{
+			0%{
+				left: 80px;
+				bottom: 80px;
+				opacity: 1;
+			}
+			20%{
+				left: 300px;
+				bottom: 400px;
+				opacity: 0.1
+			}
+			40%{
+				left: 500px;
+				bottom: 250px;
+				opacity: 1
+			}
+			60%{
+				left: 800px;
+				bottom: 100px;
+				opacity: 0.5;
+			}
+			80%{
+				left: 900px;
+				bottom: 20px;
+				opacity: 0.8;
+
+			}
+			100%{
+				left: 400px;
+				bottom: 100px;
+				opacity: 1;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="bg">
+		<ul>
+		<li class="li-1"><img src="image/image-1.jpg"></li>
+		<li class="li-2"><img src="image/image-2.jpg"></li>
+		<li class="li-3"><img src="image/image-3.jpg"></li>
+		<li class="li-4"><img src="image/image-4.jpg"></li>
+		<li class="li-5"><img src="image/image-5.jpg"></li>
+		<li class="li-6"><img src="image/image-6.jpg"></li>
+	
+		</ul>
+	</div>
+	<div class="music">
+		<audio src="music/Love Paradise.mp3" id="controls" autoplay="autoplay">音乐</audio>
+	</div>
+	<div class="jj">
+	<img src="image/pause.png" id="pause-logo" onclick="controls()">
+	</div>
+	<img src="image/heart.png" class="heart" alt="">
+</body>
+<script type="text/javascript">
+	var love=document.getElementById("controls");
+	var gg=document.getElementById("pause-logo")
+	function controls(){
+		if(love.paused){
+			love.play();
+			gg.setAttribute("src","image/pause.png");
+		}
+		else{
+			love.pause();
+			gg.setAttribute("src","image/play.png")
+		}
+	}
+</script>
+>>>>>>> 93ac756c09051f8cf125afcfef760022428f9fe7
+</html>
